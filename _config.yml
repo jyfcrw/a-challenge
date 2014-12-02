@@ -1,0 +1,18 @@
+# Site settings
+title: ele.me
+email: jyfcrw@gmail.com
+baseurl: ""
+url: "http://ele.me"
+encoding: "utf-8"
+image_root: "assets/images"
+css_root: "assets/css"
+destination: "app"
+
+# Build settings
+exclude:
+- Gemfile*
+- README.md
+- node_modules
+- gulpfile.js
+- package.json
+
