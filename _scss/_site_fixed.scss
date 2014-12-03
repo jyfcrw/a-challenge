@@ -1,0 +1,89 @@
+.site-fixed {
+    z-index: 2;
+    position: fixed;
+    right: 10px;
+    bottom: 220px;
+    width: 48px;
+    height: 101px;
+}
+
+.btn-back-top {
+    padding: 16px 11px 0;
+}
+
+.btn-back-top,
+.btn-app-qrcode,
+.btn-setup-shop {
+    @include box-sizing(border-box);
+    display: block;
+    margin-bottom: 5px;
+    width: 48px;
+    height: 48px;
+    background: rgba(0,0,0,0.5);
+    background: #999\9;
+    @include border-radius(2px);
+}
+
+.btn-back-top {
+    &:hover {
+        background: rgba(0,0,0,0.7);
+        background: #666\9;
+    }
+
+    & >.icon-backtop {
+        display: block;
+        width: 26px;
+        height: 14px;
+        background: url("/assets/images/global/global-sprites.png") no-repeat -120px 0;
+    }
+}
+
+.btn-app-qrcode {
+    position: relative;
+    padding: 15px 15px 0;
+
+    &:hover {
+        // display img-qrcode when mouse hover
+        .img-qrcode {
+            display: block;
+        }
+    }
+
+    & >.icon-qrcode {
+        display: block;
+        width: 18px;
+        height: 18px;
+        background: url("/assets/images/global/global-sprites.png") no-repeat -150px 0;
+    }
+
+    & >.img-qrcode {
+        position: absolute;
+        top: -44px;
+        right: 53px;
+        width: 124px;
+        max-width: none;
+        padding: 5px;
+        display: none;
+        background: #fff;
+        @include border-radius(2px);
+        @include box-shadow(rgba(0,0,0,0.2) 0 1px 2px);
+    }
+}
+
+.icon-qrcode {
+    background-position: -432px -24px;
+}
+
+.btn-setup-shop {
+    padding: 10px 5px 0;
+    line-height: 1.2;
+    text-align: center;
+    color: #fff;
+
+    &:hover {
+        color: #fff;
+        background: rgba(0,0,0,0.7);
+        background: #666\9;
+        text-decoration: none;
+    }
+}
