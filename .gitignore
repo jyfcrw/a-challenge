@@ -1,5 +1,6 @@
 .sass-cache
 Gemfile.lock
 node_modules
+*.log
 assets
 app

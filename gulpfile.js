@@ -38,6 +38,7 @@ gulp.task('watch', function() {
 	});
 	gulp.watch('_scss/**/*.scss', ['sass']);
 	gulp.watch(["**/*.html",
+				"uploads/**/*",
 				"!app/**/*",
 				"!node_modules/**/*"], ['rebuild']);
 });
