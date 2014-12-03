@@ -1,0 +1,42 @@
+<!-- 不引用兼容性js库的话，那就先不用header标签吧 -->
+<div id="topbar" role="banner">
+    <div class="container clearfix">
+        <a id="logo" href="#" title="饿了么" alt="饿了么" role="logo">
+            <i class="default-logo"></i>
+        </a>
+
+        <a class="mobile-apps" href="#" target="_blank">
+            <i class="icon-mobile"></i>手机客户端
+        </a>
+
+        <div id="topbar_search" class="topbar-search" role="search">
+            <form id="tsearch_form" class="tsearch-form clearfix" action="#" method="get">
+                <i class="icon-tsearch"></i>
+                <input id="tsearch_input" class="tsearch-input" type="text" name="kw" autocomplete="off" placeholder="搜索餐厅，美食…">
+                <i id="ts_loading" class="icon-tloading hide"></i>
+                <a id="ts_clear" class="icon-tclear hide"></a>
+            </form>
+        </div>
+
+        <div class="topbar-nav" role="navigation">
+            <ul class="topbar-site-nav">
+                <li><a class="tnav-link" rel="nofollow" href="#">我的饿单</a></li>
+                <li><a class="tnav-link" rel="nofollow" href="#">礼品中心</a></li>
+                <li><a class="tnav-link" rel="nofollow" href="#">反馈留言</a></li>
+                <li><a class="tnav-link" rel="nofollow" href="#" target="_blank">附近团购</a></li>
+            </ul>
+
+            <div id="topbar_cart" class="topbar-widget topbar-cart empty">
+                <a class="twidget-toggle">
+                    <span id="tcart_total" class="tcart-total twidget-total">0</span>
+                    <i class="icon-tcart"></i>
+                </a>
+            </div>
+
+            <div class="topbar-user-nav tnav-link">
+                <a rel="nofollow" href="#">登录</a> /
+                <a rel="nofollow" href="#">注册</a>
+            </div>
+        </div>
+    </div>
+</div>
