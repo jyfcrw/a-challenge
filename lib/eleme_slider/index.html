@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Bannnnnner..</title>
+        <link href="css/main.css" type="text/css" rel="stylesheet">
+        <script type="text/javascript" src="lib/eleme_slider.js"></script>
+    </head>
+    <body>
+        <h1>Ele.me Slider</h1>
+        <p>A pretty simple slider for banners on <a href="http://ele.me"><i>ele.me</i></a> .</p>
+
+        <div id="banner1" class="banner">
+            <ul>
+                <li><a href="#"><img src="uploads/1.gif"/></a></li>
+                <li><a href="#"><img src="uploads/2.gif"/></a></li>
+                <li><a href="#"><img src="uploads/3.gif"/></a></li>
+            </ul>
+        </div>
+        <br/>
+        <div id="banner2" class="banner">
+            <ul>
+                <li><a href="#"><img src="uploads/1.gif"/></a></li>
+                <li><a href="#"><img src="uploads/2.gif"/></a></li>
+                <li><a href="#"><img src="uploads/3.gif"/></a></li>
+            </ul>
+        </div>
+
+        <h3> Options </h3>
+        <p style="background: #efefef; padding: 10px; letter-spacing: 0.1em;">
+            autoplay: true<br/>
+            loop: false <br/>
+            delay: 0 <br/>
+            speed: 500 <br/>
+            duration: 3000 <br/>
+            pauseOnHover: false <br/>
+            direction: "top" <i>#it also can be "left", "bottom", "right".</i>
+        </p>
+
+        <script type="text/javascript">
+            var slider1 = new ElemeSlider({
+                element: document.getElementById("banner1"),
+                height: 80,
+                width: 950,
+                speed: 300,
+                loop: true,
+                direction: "top",
+                duration: 2000,
+                pauseOnHover: true
+            });
+
+            var slider2 = new ElemeSlider({
+                element: document.getElementById("banner2"),
+                height: 80,
+                width: 950,
+                speed: 500,
+                loop: true,
+                direction: "right",
+                duration: 3000,
+                pauseOnHover: false
+            });
+        </script>
+    </body>
+</html>
