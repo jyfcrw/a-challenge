@@ -32,5 +32,10 @@ sudo npm install
 gulp serve
 ````
 
+## Notice
+
 To see the Eleme Slider, follow this path.
 [Go to see the Eleme Slider](https://github.com/jyfcrw/a-challenge/tree/master/lib/eleme_slider/).
+
+The generated static site is under the "app" folder, follow this path to check it.
+[Go to check the generated site](https://github.com/jyfcrw/a-challenge/tree/master/app/).
