@@ -10,7 +10,7 @@
         width: 90px;
         height: 40px;
         display: block;
-        background: url("/assets/images/global/topbar.png") no-repeat transparent 0 0;
+        background: image-url("/assets/images/global/topbar.png") no-repeat transparent 0 0;
     }
 }
 
@@ -49,7 +49,7 @@
         margin-right: 6px;
         width: 9px;
         height: 14px;
-        background: url("/assets/images/global/topbar.png") no-repeat transparent 0 -40px;
+        background: image-url("/assets/images/global/topbar.png") no-repeat transparent 0 -40px;
     }
 
     .topbar-search {

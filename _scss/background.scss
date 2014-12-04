@@ -8,21 +8,21 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background: url("/assets/images/background/background.jpg") repeat-x;
+  background: image-url("/assets/images/background/background.jpg") repeat-x;
 }
 #sun {
   position: absolute;
   left: 0px;
   width: 445px;
   height: 356px;
-  background: transparent url("/assets/images/background/clouds.png") no-repeat -660px -350px;
+  background: transparent image-url("/assets/images/background/clouds.png") no-repeat -660px -350px;
 }
 #moon {
   position: absolute;
   right: 0px;
   width: 274px;
   height: 251px;
-  background: transparent url("/assets/images/background/clouds.png") no-repeat -395px -430px;
+  background: transparent image-url("/assets/images/background/clouds.png") no-repeat -395px -430px;
 }
 #clouds {
   position: absolute;
@@ -86,7 +86,7 @@
 #bg_stars .star_type_1_big .bg_star {
   width: 26px;
   height: 32px;
-  background-image: url("/assets/images/background/stars1-1.png");
+  background-image: image-url("/assets/images/background/stars1-1.png");
 }
 #bg_stars .star_type_1_big #star1_1 {
   left: 50px;
@@ -115,7 +115,7 @@
 #bg_stars .star_type_1_normal .bg_star {
   width: 18px;
   height: 22px;
-  background-image: url("/assets/images/background/stars1-2.png");
+  background-image: image-url("/assets/images/background/stars1-2.png");
 }
 #bg_stars .star_type_1_normal #star1_7 {
   left: 30px;
@@ -144,7 +144,7 @@
 #bg_stars .star_type_1_small .bg_star {
   width: 10px;
   height: 12px;
-  background-image: url("/assets/images/background/stars1-3.png");
+  background-image: image-url("/assets/images/background/stars1-3.png");
 }
 #bg_stars .star_type_1_small #star1_13 {
   left: 80px;
@@ -173,7 +173,7 @@
 #bg_stars .star_type_2_big .bg_star {
   width: 34px;
   height: 32px;
-  background-image: url("/assets/images/background/stars2-1.png");
+  background-image: image-url("/assets/images/background/stars2-1.png");
 }
 #bg_stars .star_type_2_big #star2_1 {
   left: 150px;
@@ -202,7 +202,7 @@
 #bg_stars .star_type_2_normal .bg_star {
   width: 23px;
   height: 23px;
-  background-image: url("/assets/images/background/stars2-2.png");
+  background-image: image-url("/assets/images/background/stars2-2.png");
 }
 #bg_stars .star_type_2_normal #star2_7 {
   left: 30px;
@@ -231,7 +231,7 @@
 #bg_stars .star_type_2_small .bg_star {
   width: 14px;
   height: 13px;
-  background-image: url("/assets/images/background/stars2-3.png");
+  background-image: image-url("/assets/images/background/stars2-3.png");
 }
 #bg_stars .star_type_2_small #star2_13 {
   left: 30px;

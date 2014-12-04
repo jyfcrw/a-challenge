@@ -34,7 +34,7 @@
         display: block;
         width: 26px;
         height: 14px;
-        background: url("/assets/images/global/global-sprites.png") no-repeat -120px 0;
+        background: image-url("/assets/images/global/global-sprites.png") no-repeat -120px 0;
     }
 }
 
@@ -53,7 +53,7 @@
         display: block;
         width: 18px;
         height: 18px;
-        background: url("/assets/images/global/global-sprites.png") no-repeat -150px 0;
+        background: image-url("/assets/images/global/global-sprites.png") no-repeat -150px 0;
     }
 
     & >.img-qrcode {

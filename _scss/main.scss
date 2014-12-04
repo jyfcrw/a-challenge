@@ -27,43 +27,43 @@ table {
 }
 
 .icon-icp {
-    background: url("/assets/images/global/global-sprites.png") no-repeat 0 0;
+    background: image-url("/assets/images/global/global-sprites.png") no-repeat 0 0;
 }
 
 .icon-tcart {
-    background: url("/assets/images/global/topbar.png") no-repeat transparent 0 -80px;
+    background: image-url("/assets/images/global/topbar.png") no-repeat transparent 0 -80px;
 }
 
 .icon-aic {
-    background: url("/assets/images/global/global-sprites.png") no-repeat -40px 0;
+    background: image-url("/assets/images/global/global-sprites.png") no-repeat -40px 0;
 }
 
 .icon-tsearch {
-    background: url("/assets/images/global/topbar.png") no-repeat transparent 0 -60px;
+    background: image-url("/assets/images/global/topbar.png") no-repeat transparent 0 -60px;
 }
 
 .icon-tclear {
-    background: url("/assets/images/global/topbar.png") no-repeat transparent -40px -60px;
+    background: image-url("/assets/images/global/topbar.png") no-repeat transparent -40px -60px;
 }
 
 .icon-tloading {
-    background: url("/assets/images/global/topbar-search-loading.gif") no-repeat center;
+    background: image-url("/assets/images/global/topbar-search-loading.gif") no-repeat center;
 }
 
 .new_icon {
-    background: url("/assets/images/global/pRst-sprites.png") no-repeat transparent 0 -330px;
+    background: image-url("/assets/images/global/pRst-sprites.png") no-repeat transparent 0 -330px;
 }
 
 .free_icon {
-    background: url("/assets/images/global/pRst-sprites.png") no-repeat transparent 0 -350px;
+    background: image-url("/assets/images/global/pRst-sprites.png") no-repeat transparent 0 -350px;
 }
 
 .discount_icon {
-    background: url("/assets/images/global/pRst-sprites.png") no-repeat transparent 0 -370px;
+    background: image-url("/assets/images/global/pRst-sprites.png") no-repeat transparent 0 -370px;
 }
 
 .hot_icon {
-    background: url("/assets/images/global/pRst-sprites.png") no-repeat transparent 0 -390px;
+    background: image-url("/assets/images/global/pRst-sprites.png") no-repeat transparent 0 -390px;
 }
 
 @import "_jqueryui.scss";
@@ -136,7 +136,7 @@ table {
     .flavor-dropdown-toggle {
         width: 59px;
         height: 41px;
-        background: url("/assets/images/divider.gif") 0 6px no-repeat;
+        background: image-url("/assets/images/divider.gif") 0 6px no-repeat;
         cursor: pointer;
 
         a {
@@ -272,7 +272,7 @@ table {
             display: block;
             width: 3px;
             height: 32px;
-            background: url("/assets/images/divider.gif");
+            background: image-url("/assets/images/divider.gif");
         }
     }
 }
@@ -339,7 +339,7 @@ table {
     top: 66px!important;
     width: 40px!important;
     padding-top: 2px!important;
-    background: url("/assets/images/bg.gif") no-repeat -114px -778px #f8f8f8!important;
+    background: image-url("/assets/images/bg.gif") no-repeat -114px -778px #f8f8f8!important;
 }
 
 .entry-un-favor {
@@ -347,14 +347,14 @@ table {
     top: 66px!important;
     width: 60px!important;
     padding-top: 2px!important;
-    background: url("/assets/images/bg.gif") no-repeat -205px -778px #f8f8f8!important;
+    background: image-url("/assets/images/bg.gif") no-repeat -205px -778px #f8f8f8!important;
 }
 
 .rating-star {
     display: inline-block;
     width: 61px;
     height: 14px;
-    background: url("/assets/images/bg.gif") no-repeat -1px -193px;
+    background: image-url("/assets/images/bg.gif") no-repeat -1px -193px;
 }
 
 
@@ -364,7 +364,7 @@ table {
     height: 15px;
     margin-right: 5px;
     float: left;
-    background: url("/assets/images/global/service-icons.png8.png") transparent 0 0 no-repeat;
+    background: image-url("/assets/images/global/service-icons.png8.png") transparent 0 0 no-repeat;
 
     &.new-restaurant {
         background-position: 0 0;
@@ -513,7 +513,7 @@ table {
     }
 
     &.closed {
-        background: #fff url("/assets/images/restaurant_closed_bg.png");
+        background: #fff image-url("/assets/images/restaurant_closed_bg.png");
 
         a {
             color: #999;
@@ -535,7 +535,7 @@ table {
 
     .add-favor {
         height: 92px;
-        background: #fff url("/assets/images/bg.gif") no-repeat -112px -94px;
+        background: #fff image-url("/assets/images/bg.gif") no-repeat -112px -94px;
         border-left: 1px solid white;
         border-right: 1px solid white;
         margin: 0;
@@ -543,7 +543,7 @@ table {
         padding-top: 0;
 
         &:hover {
-            background: #fff url("/assets/images/bg.gif") no-repeat -303px -94px;
+            background: #fff image-url("/assets/images/bg.gif") no-repeat -303px -94px;
         }
     }
 
@@ -558,7 +558,7 @@ table {
         text-align: right;
 
         .favor-icon {
-            background: transparent url("/assets/images/bg.gif") repeat scroll -480px -776px;
+            background: transparent image-url("/assets/images/bg.gif") repeat scroll -480px -776px;
             height: 22px;
             width: 20px;
             position: absolute;
@@ -576,13 +576,13 @@ table {
         }
 
         .hover-add-favor {
-            background: url("/assets/images/bg.gif") no-repeat -124px -779px;
+            background: image-url("/assets/images/bg.gif") no-repeat -124px -779px;
             right: 10px;
             width: 27px;
         }
 
         .hover-un-favor {
-            background: url("/assets/images/bg.gif") no-repeat -205px -779px;
+            background: image-url("/assets/images/bg.gif") no-repeat -205px -779px;
             right: 10px;
             width: 53px;
         }
@@ -728,7 +728,7 @@ table {
     float: left;
 
     .favor-icon {
-        background: transparent url("/assets/images/bg.gif") repeat scroll -480px -776px;
+        background: transparent image-url("/assets/images/bg.gif") repeat scroll -480px -776px;
         height: 22px;
         width: 20px;
         position: absolute;
