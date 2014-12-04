@@ -2,5 +2,4 @@
 Gemfile.lock
 node_modules
 *.log
-assets
-app
+/assets

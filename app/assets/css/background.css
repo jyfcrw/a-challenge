@@ -1,0 +1,388 @@
+/* line 1, ../../_scss/background.scss */
+.full-content-wrapper {
+  position: relative;
+}
+
+/* Set Background Canvas Position*/
+/* line 5, ../../_scss/background.scss */
+#background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: url('../images/background/background.jpg?1417690313') repeat-x;
+}
+
+/* line 13, ../../_scss/background.scss */
+#sun {
+  position: absolute;
+  left: 0px;
+  width: 445px;
+  height: 356px;
+  background: transparent url('../images/background/clouds.png?1417690347') no-repeat -660px -350px;
+}
+
+/* line 20, ../../_scss/background.scss */
+#moon {
+  position: absolute;
+  right: 0px;
+  width: 274px;
+  height: 251px;
+  background: transparent url('../images/background/clouds.png?1417690347') no-repeat -395px -430px;
+}
+
+/* line 27, ../../_scss/background.scss */
+#clouds {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+/* line 32, ../../_scss/background.scss */
+#clouds .cloudPiece {
+  position: absolute;
+}
+
+/* line 35, ../../_scss/background.scss */
+#clouds #cloudPiece1 {
+  top: 220px;
+  left: -10px;
+  clip: rect(0 296px 190px 0);
+}
+
+/* line 40, ../../_scss/background.scss */
+#clouds #cloudPiece2 {
+  top: 450px;
+  left: -290px;
+  clip: rect(0 515px 144px 300px);
+}
+
+/* line 45, ../../_scss/background.scss */
+#clouds #cloudPiece3 {
+  top: 600px;
+  right: -300px;
+  clip: rect(0 810px 222px 515px);
+}
+
+/* line 50, ../../_scss/background.scss */
+#clouds #cloudPiece4 {
+  top: 460px;
+  right: 15px;
+  clip: rect(0 1085px 144px 810px);
+}
+
+/* line 55, ../../_scss/background.scss */
+#clouds #cloudPiece5 {
+  top: 420px;
+  left: -370px;
+  clip: rect(222px 665px 430px 382px);
+}
+
+/* line 60, ../../_scss/background.scss */
+#clouds #cloudPiece6 {
+  top: 50px;
+  left: 620px;
+  clip: rect(222px 870px 360px 672px);
+}
+
+/* line 65, ../../_scss/background.scss */
+#clouds #cloudPiece7 {
+  top: -120px;
+  left: -110px;
+  clip: rect(195px 385px 415px 0);
+}
+
+/* line 70, ../../_scss/background.scss */
+#clouds #cloudPiece8 {
+  top: 70px;
+  left: 520px;
+  clip: rect(222px 1078px 360px 878px);
+}
+
+/* =====  Stars  ===== */
+/* line 76, ../../_scss/background.scss */
+#bg_stars {
+  display: none;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+/* line 82, ../../_scss/background.scss */
+#bg_stars .bg_star {
+  position: absolute;
+  background-position: 0 0;
+}
+
+/* line 86, ../../_scss/background.scss */
+#bg_stars .star_type_1_big .bg_star {
+  width: 26px;
+  height: 32px;
+  background-image: url('../images/background/stars1-1.png?1417690348');
+}
+
+/* line 91, ../../_scss/background.scss */
+#bg_stars .star_type_1_big #star1_1 {
+  left: 50px;
+  top: 650px;
+}
+
+/* line 95, ../../_scss/background.scss */
+#bg_stars .star_type_1_big #star1_2 {
+  left: 100px;
+  top: 300px;
+}
+
+/* line 99, ../../_scss/background.scss */
+#bg_stars .star_type_1_big #star1_3 {
+  left: 200px;
+  top: 450px;
+}
+
+/* line 103, ../../_scss/background.scss */
+#bg_stars .star_type_1_big #star1_4 {
+  right: 50px;
+  top: 350px;
+}
+
+/* line 107, ../../_scss/background.scss */
+#bg_stars .star_type_1_big #star1_5 {
+  right: 150px;
+  top: 150px;
+}
+
+/* line 111, ../../_scss/background.scss */
+#bg_stars .star_type_1_big #star1_6 {
+  right: 100px;
+  top: 750px;
+}
+
+/* line 115, ../../_scss/background.scss */
+#bg_stars .star_type_1_normal .bg_star {
+  width: 18px;
+  height: 22px;
+  background-image: url('../images/background/stars1-2.png?1417690348');
+}
+
+/* line 120, ../../_scss/background.scss */
+#bg_stars .star_type_1_normal #star1_7 {
+  left: 30px;
+  top: 900px;
+}
+
+/* line 124, ../../_scss/background.scss */
+#bg_stars .star_type_1_normal #star1_8 {
+  left: 90px;
+  top: 750px;
+}
+
+/* line 128, ../../_scss/background.scss */
+#bg_stars .star_type_1_normal #star1_9 {
+  left: 130px;
+  top: 150px;
+}
+
+/* line 132, ../../_scss/background.scss */
+#bg_stars .star_type_1_normal #star1_10 {
+  right: 170px;
+  top: 620px;
+}
+
+/* line 136, ../../_scss/background.scss */
+#bg_stars .star_type_1_normal #star1_11 {
+  right: 30px;
+  top: 250px;
+}
+
+/* line 140, ../../_scss/background.scss */
+#bg_stars .star_type_1_normal #star1_12 {
+  right: 200px;
+  top: 470px;
+}
+
+/* line 144, ../../_scss/background.scss */
+#bg_stars .star_type_1_small .bg_star {
+  width: 10px;
+  height: 12px;
+  background-image: url('../images/background/stars1-3.png?1417690349');
+}
+
+/* line 149, ../../_scss/background.scss */
+#bg_stars .star_type_1_small #star1_13 {
+  left: 80px;
+  top: 800px;
+}
+
+/* line 153, ../../_scss/background.scss */
+#bg_stars .star_type_1_small #star1_14 {
+  left: 180px;
+  top: 350px;
+}
+
+/* line 157, ../../_scss/background.scss */
+#bg_stars .star_type_1_small #star1_15 {
+  left: 220px;
+  top: 50px;
+}
+
+/* line 161, ../../_scss/background.scss */
+#bg_stars .star_type_1_small #star1_16 {
+  right: 160px;
+  top: 670px;
+}
+
+/* line 165, ../../_scss/background.scss */
+#bg_stars .star_type_1_small #star1_17 {
+  right: 90px;
+  top: 150px;
+}
+
+/* line 169, ../../_scss/background.scss */
+#bg_stars .star_type_1_small #star1_18 {
+  right: 140px;
+  top: 330px;
+}
+
+/* line 173, ../../_scss/background.scss */
+#bg_stars .star_type_2_big .bg_star {
+  width: 34px;
+  height: 32px;
+  background-image: url('../images/background/stars2-1.png?1417690351');
+}
+
+/* line 178, ../../_scss/background.scss */
+#bg_stars .star_type_2_big #star2_1 {
+  left: 150px;
+  top: 450px;
+}
+
+/* line 182, ../../_scss/background.scss */
+#bg_stars .star_type_2_big #star2_2 {
+  left: 230px;
+  top: 220px;
+}
+
+/* line 186, ../../_scss/background.scss */
+#bg_stars .star_type_2_big #star2_3 {
+  left: 80px;
+  top: 410px;
+}
+
+/* line 190, ../../_scss/background.scss */
+#bg_stars .star_type_2_big #star2_4 {
+  right: 250px;
+  top: 750px;
+}
+
+/* line 194, ../../_scss/background.scss */
+#bg_stars .star_type_2_big #star2_5 {
+  right: 190px;
+  top: 410px;
+}
+
+/* line 198, ../../_scss/background.scss */
+#bg_stars .star_type_2_big #star2_6 {
+  right: 70px;
+  top: 280px;
+}
+
+/* line 202, ../../_scss/background.scss */
+#bg_stars .star_type_2_normal .bg_star {
+  width: 23px;
+  height: 23px;
+  background-image: url('../images/background/stars2-2.png?1417690353');
+}
+
+/* line 207, ../../_scss/background.scss */
+#bg_stars .star_type_2_normal #star2_7 {
+  left: 30px;
+  top: 830px;
+}
+
+/* line 211, ../../_scss/background.scss */
+#bg_stars .star_type_2_normal #star2_8 {
+  left: 190px;
+  top: 350px;
+}
+
+/* line 215, ../../_scss/background.scss */
+#bg_stars .star_type_2_normal #star2_9 {
+  left: 230px;
+  top: 550px;
+}
+
+/* line 219, ../../_scss/background.scss */
+#bg_stars .star_type_2_normal #star2_10 {
+  right: 170px;
+  top: 920px;
+}
+
+/* line 223, ../../_scss/background.scss */
+#bg_stars .star_type_2_normal #star2_11 {
+  right: 90px;
+  top: 450px;
+}
+
+/* line 227, ../../_scss/background.scss */
+#bg_stars .star_type_2_normal #star2_12 {
+  right: 270px;
+  top: 370px;
+}
+
+/* line 231, ../../_scss/background.scss */
+#bg_stars .star_type_2_small .bg_star {
+  width: 14px;
+  height: 13px;
+  background-image: url('../images/background/stars2-3.png?1417690353');
+}
+
+/* line 236, ../../_scss/background.scss */
+#bg_stars .star_type_2_small #star2_13 {
+  left: 30px;
+  top: 740px;
+}
+
+/* line 240, ../../_scss/background.scss */
+#bg_stars .star_type_2_small #star2_14 {
+  left: 60px;
+  top: 250px;
+}
+
+/* line 244, ../../_scss/background.scss */
+#bg_stars .star_type_2_small #star2_15 {
+  left: 100px;
+  top: 80px;
+}
+
+/* line 248, ../../_scss/background.scss */
+#bg_stars .star_type_2_small #star2_16 {
+  right: 230px;
+  top: 370px;
+}
+
+/* line 252, ../../_scss/background.scss */
+#bg_stars .star_type_2_small #star2_17 {
+  right: 160px;
+  top: 190px;
+}
+
+/* line 256, ../../_scss/background.scss */
+#bg_stars .star_type_2_small #star2_18 {
+  right: 300px;
+  top: 270px;
+}
+
+/* line 260, ../../_scss/background.scss */
+.day #sun,
+.night #moon,
+.night #bg_stars {
+  display: block;
+}
+
+/* line 265, ../../_scss/background.scss */
+.night #sun,
+.day #moon,
+.day #bg_stars {
+  display: none;
+}
