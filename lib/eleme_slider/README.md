@@ -8,19 +8,19 @@ a pretty simple slider.
 
 ## How to run
 
-1. Get in
+1.Get in
 
 ````
 cd eleme/lib/eleme_slider/
 ````
 
-2. Install dependences
+2.Install dependences
 
 ````
 sudo npm install
 ````
 
-3. Rock it!
+3.Rock it!
 
 ````
 gulp serve
