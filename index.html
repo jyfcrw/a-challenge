@@ -2,5 +2,236 @@
 layout: default
 ---
 
+{% include background.html %}
 <div class="full-content-wrapper">
+    {% include header.html %}
+    <div class="container">
+        <div class="breadcrumb">
+            上海中为智能机器人有限公司 <a class="breadcrumb-switch" href="#">[切换地址]</a>
+        </div>
+
+        <div id="promotion_banner" class="promotion-banner">
+            <!-- 轮播组件就用张图片占个位吧 -->
+            <a target="_blank" href="#">
+                <img src="uploads/10ea2f228dce4ef61c56c52ae5f9agif.gif">
+            </a>
+        </div>
+
+        <div class="row favored-restaurants restaurants-row" id="favored-bar">
+            <div class="span12 row-wrapper">
+                <div class="row">
+                    <div class="span12 category-restaurant-header">
+                        <span class="title">我的收藏</span>
+                        <span class="right-action">
+                            <a href="#">设置</a>
+                        </span>
+                    </div>
+                    <div class="span12" id="favored-restaurants">
+                        <table class="restaurant-list-table">
+                            <tbody>
+                                <tr>
+                                    {% for i in (1..5) %}
+                                    <td>
+                                        <div class="restaurant-block lite">
+                                            <div class="add-favor"></div>
+                                        </div>
+                                    </td>
+                                    {% endfor %}
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row more-restaurants restaurants-row">
+            <div class="span12 row-wrapper">
+                <div class="row">
+                    <div class="span12 category-restaurant-header">
+                        <a class="p-entrance p-entrance-btn" target="_blank" href="#">
+                            <span>前往品牌馆</span>
+                        </a>
+                        <a class="p-entrance p-entrance-total" target="_blank" href="#">
+                            <span>(查看<em>56</em>家品牌餐厅)</span>
+                        </a>
+                    </div>
+                    <div class="span12">
+                        <table class="restaurant-list-table more-restaurant-table">
+                            <tbody>
+                                <tr>
+                                    <td>{% include restaurant_2.html %}</td>
+                                    <td>{% include restaurant_1.html %}</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row promoted-restaurants restaurants-row">
+            <div class="span12 row-wrapper">
+                <div class="row">
+                    <div class="span12 category-restaurant-header with-restaurant-filter">
+                        <div class="row">
+                            <div class="span12">
+                                <div id="filter-btn-wrapper">
+                                    <span class="filter-btn checked" pinyin="tuijian">
+                                        <input type="checkbox" name="filter" value="tuijian" checked="checked">
+                                        <span class="filter-text tuijian">热门餐厅</span>
+                                    </span>
+                                    <span class="filter-btn" pinyin="open">
+                                        <input type="checkbox" name="filter" value="open">
+                                        <span class="filter-text open">营业中</span>
+                                    </span>
+                                    <span class="filter-divider"></span>
+                                    <span class="filter-btn activity-filter" pinyin="online_payment">
+                                        <input type="checkbox" name="filter">
+                                        <span class="filter-text online_payment with-icon">在线支付
+                                            <span class="new_icon"></span>
+                                        </span>
+                                    </span>
+
+                                    <span class="filter-btn activity-filter" pinyin="chaoshipeifu">
+                                        <input type="checkbox" name="filter">
+                                        <span class="filter-text chaoshipeifu with-icon">超时赔付</span>
+                                    </span>
+                                    <div class="flavorblock">
+                                        <div class="flavor-dropdown-toggle" data-toggle="dropdown">
+                                            <a>口味<b class="caret"></b></a>
+                                        </div>
+                                        <ul class="flavor-dropdown-menu" style="display:none">
+                                            <li class="flavor all filter-btn"><a>全部</a></li>
+                                            <li class="flavor filter-btn flavor-filter" pinyin="zhongshi"><a>中式</a></li>
+                                            <li class="flavor filter-btn flavor-filter" pinyin="xishi"><a>西式</a></li>
+                                            <li class="flavor filter-btn flavor-filter" pinyin="gangshi"><a>港式</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="deliver-slider-wrapper ">
+                                        <span id="deliver-amount-level">全部</span>
+                                        <div class="slider-wrapper">
+                                            <div id="geo_deliver_slider" class="deliver-slider ui-eleme slider tool-tip ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" title="起送价" level="4" max="4" min="1">
+                                                <div class="ui-slider-range ui-widget-header ui-slider-range-min" style="width: 100%;"></div>
+                                                <a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 100%;"></a>
+                                            </div>
+                                        </div>
+                                        <span>起送价</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span12 category-restaurant-header with-restaurant-filter area-activities">
+                        <div class="area-activities-other">
+                            <span class="filter-btn activity-filter">
+                                <input type="checkbox" name="filter">
+                                <span class="filter-text">送雀巢咖啡，午后提神醒脑</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="span12">
+                        <table class="restaurant-list-table">
+                            <tbody>
+                                <tr>
+                                    <td>{% include restaurant_1.html %}</td>
+                                    <td>{% include restaurant_2.html %}</td>
+                                    <td>{% include restaurant_3.html %}</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="geoplace-activities clearfix">
+            <a class="gp-activity-block" href="#">
+                <img src="assets/images/activity_1.gif" title="热卖美食">
+            </a>
+            <a class="gp-activity-block" href="#">
+                <img src="assets/images/activity_2.gif" title="体验订餐流程">
+            </a>
+            <a class="gp-activity-block" href="#">
+                <img src="assets/images/activity_3.gif" title="mobile_app">
+            </a>
+            <a class="gp-activity-block" href="#">
+                <img src="assets/images/activity_4.gif" title="谁去拿外卖">
+            </a>
+            <a class="gp-activity-block" href="#">
+                <img src="assets/images/activity_5.gif" title="常见问题">
+            </a>
+        </div>
+
+        <div class="row more-restaurants restaurants-row">
+            <div class="span12 row-wrapper">
+                <div class="row">
+                    <div class="span12 category-restaurant-header">
+                        <span class="title">附近团购</span>
+                    </div>
+                    <div class="span12">
+                        <table class="restaurant-list-table more-restaurant-table">
+                            <tbody>
+                                <tr>
+                                    <td>{% include groupon.html %}</td>
+                                    <td>{% include groupon.html %}</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row more-restaurants restaurants-row">
+            <div class="span12 row-wrapper">
+                <div class="row">
+                    <div class="span12 category-restaurant-header">
+                        <span class="title">更多餐厅</span>
+                    </div>
+                    <div class="span12">
+                        <table class="restaurant-list-table more-restaurant-table">
+                            <tbody>
+                                <tr>
+                                    <td>{% include restaurant_1.html %}</td>
+                                    <td>{% include restaurant_2.html %}</td>
+                                    <td>{% include restaurant_3.html %}</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>{% include restaurant_2.html %}</td>
+                                    <td>{% include restaurant_3.html %}</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>{% include restaurant_3.html %}</td>
+                                    <td>{% include restaurant_1.html %}</td>
+                                    <td>{% include restaurant_4.html %}</td>
+                                    <td>{% include restaurant_4.html %}</td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    {% include site_fixed.html %}
+    {% include footer.html %}
+    <!-- 没有包含 modal_globalLogin 部分，未登录时，最好跳转到登陆页面，登陆后再跳转回来。 -->
 </div>
+

@@ -1,0 +1,866 @@
+@import "compass";
+@import "_base.scss";
+
+body {
+    background-color: #c0deed;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+th,
+var {
+    font-style: normal;
+    font-weight: normal;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+table {
+    table-layout: fixed;
+    word-wrap: break-word;
+}
+
+.icon-icp {
+    background: url("/assets/images/global/global-sprites.png") no-repeat 0 0;
+}
+
+.icon-tcart {
+    background: url("/assets/images/global/topbar.png") no-repeat transparent 0 -80px;
+}
+
+.icon-aic {
+    background: url("/assets/images/global/global-sprites.png") no-repeat -40px 0;
+}
+
+.icon-tsearch {
+    background: url("/assets/images/global/topbar.png") no-repeat transparent 0 -60px;
+}
+
+.icon-tclear {
+    background: url("/assets/images/global/topbar.png") no-repeat transparent -40px -60px;
+}
+
+.icon-tloading {
+    background: url("/assets/images/global/topbar-search-loading.gif") no-repeat center;
+}
+
+.new_icon {
+    background: url("/assets/images/global/pRst-sprites.png") no-repeat transparent 0 -330px;
+}
+
+.free_icon {
+    background: url("/assets/images/global/pRst-sprites.png") no-repeat transparent 0 -350px;
+}
+
+.discount_icon {
+    background: url("/assets/images/global/pRst-sprites.png") no-repeat transparent 0 -370px;
+}
+
+.hot_icon {
+    background: url("/assets/images/global/pRst-sprites.png") no-repeat transparent 0 -390px;
+}
+
+@import "_jqueryui.scss";
+@import "_header.scss";
+@import "_footer.scss";
+@import "_site_fixed.scss";
+
+.breadcrumb {
+    color: #0088c8;
+    margin: 5px 0 10px 0;
+}
+
+.breadcrumb-switch {
+    margin-left: 8px;
+}
+
+.night  {
+    .breadcrumb, .breadcrumb a, .site-footer a {
+        color: white;
+    }
+}
+
+.promotion-banner {
+    width: 100%;
+    height: 80px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.favored-restaurants,
+.promoted-restaurants,
+.more-restaurants {
+    margin-bottom: 15px;
+}
+
+.restaurants-row .row-wrapper {
+    background: #fff;
+    border: 1px solid #f5f5f5;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
+
+#filter-btn-wrapper {
+    & > span {
+        float: left;
+    }
+
+    .with-icon {
+        position: relative;
+        display: inline-block;
+    }
+
+    .icon-hot,
+    .new_icon,
+    .free_icon,
+    .discount_icon {
+        position: absolute;
+        top: -5px;
+        left: 5px;
+        height: 17px;
+        width: 31px;
+    }
+
+    .flavorblock {
+        float: left;
+        position: relative;
+        margin-left: 5px;
+    }
+
+    .flavor-dropdown-toggle {
+        width: 59px;
+        height: 41px;
+        background: url("/assets/images/divider.gif") 0 6px no-repeat;
+        cursor: pointer;
+
+        a {
+            text-decoration: none;
+            vertical-align: middle;
+            padding-left: 18px;
+            line-height: 40px;
+        }
+
+        b {
+            margin-left: 3px;
+            vertical-align: middle;
+        }
+    }
+
+    .flavor-dropdown-menu {
+        position: absolute;
+        list-style-type: none;
+        width: 59px;
+        margin-left: 0;
+        margin-top: -1px;
+        background: #f0f0f0;
+        border: 1px solid #d0d0d0;
+        z-index: 9;
+
+        li {
+            width: 59px;
+            height: 30px;
+            text-align: center;
+
+            &:hover {
+                background: #7ab0d4;
+            }
+
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+
+    .deliver-slider-wrapper {
+        float: right;
+
+        span {
+            float: right;
+            margin-top: 1px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        #deliver-amount-level {
+            width: 58px;
+            text-align: center;
+        }
+
+        .slider-wrapper {
+            float: right;
+            width: 130px;
+            height: 20px;
+            margin-top: 14px;
+
+            .ui-slider-horizontal {
+                height: 11px;
+            }
+        }
+    }
+}
+
+.category-restaurant-header {
+    background-color: #fbfbfb;
+    @include background-image(linear-gradient(top, #fff, #f5f5f5));
+    background-repeat: repeat-x;
+    margin-bottom: 0;
+    font-size: 14px;
+    height: 32px;
+    line-height: 32px;
+    border-bottom: 1px solid #ccc;
+
+    a {
+        color: #333;
+        line-height: 30px;
+    }
+
+    span {
+        &.title {
+            margin-left: 10px;
+        }
+
+        &.right-action {
+            float: right;
+            margin-right: 10px;
+            a {
+                color: #999;
+
+                &:hover {
+                    color: #0088c8;
+                }
+            }
+        }
+    }
+
+    &.with-restaurant-filter {
+        height: 40px;
+    }
+
+    #filter-btn-wrapper {
+        margin-left: 10px;
+        line-height: 40px;
+
+        .filter-btn {
+            margin-right: 10px;
+            cursor: pointer;
+
+            .filter-text {
+                vertical-align: middle;
+            }
+
+            input {
+                vertical-align: middle;
+                margin: 0;
+                padding: 0;
+                width: 12px;
+                height: 12px;
+                margin-right: 2px;
+                margin-top: 1px;
+            }
+        }
+
+        .filter-divider {
+            float: left;
+            margin-top: 6px;
+            margin-right: 10px;
+            display: block;
+            width: 3px;
+            height: 32px;
+            background: url("/assets/images/divider.gif");
+        }
+    }
+}
+
+.restaurant-list-table {
+    margin-bottom: 0;
+    border-collapse: separate;
+    border-radius: 0;
+
+    thead {
+        th, td {
+            border-top: 0;
+        }
+
+        tr:first-child {
+            th {
+                border-top: 0;
+            }
+            th:last-child {
+                border-radius: 0;
+            }
+            th:first-child, td:first-child {
+                border-radius: 0;
+            }
+        }
+    }
+
+    tbody {
+        tr:first-child {
+            td:first-child {
+                border-radius: 0;
+            }
+            td:last-child {
+                border-radius: 0;
+            }
+            td {
+                border-top: 0;
+            }
+        }
+        tr:last-child {
+            td:last-child {
+                border-radius: 0;
+            }
+            td:first-child {
+                border-radius: 0;
+            }
+        }
+    }
+
+    td {
+        background: #fff;
+        padding: 0;
+        width: 189px;
+        border-top: 1px solid #DDD;
+    }
+
+    th+th, td+td, th+td {
+        border-left: 1px solid #ddd;
+    }
+}
+
+.entry-favor {
+    height: 18px;
+    top: 66px!important;
+    width: 40px!important;
+    padding-top: 2px!important;
+    background: url("/assets/images/bg.gif") no-repeat -114px -778px #f8f8f8!important;
+}
+
+.entry-un-favor {
+    height: 18px;
+    top: 66px!important;
+    width: 60px!important;
+    padding-top: 2px!important;
+    background: url("/assets/images/bg.gif") no-repeat -205px -778px #f8f8f8!important;
+}
+
+.rating-star {
+    display: inline-block;
+    width: 61px;
+    height: 14px;
+    background: url("/assets/images/bg.gif") no-repeat -1px -193px;
+}
+
+
+.restaurant-icons, .service-icons {
+    display: block;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    float: left;
+    background: url("/assets/images/global/service-icons.png8.png") transparent 0 0 no-repeat;
+
+    &.new-restaurant {
+        background-position: 0 0;
+    }
+
+    &.recoup {
+        background-position: 0 -100px;
+    }
+
+    &.invoice {
+        background-position: 0 -120px;
+    }
+
+    &.deliver-fee {
+        background-position: 0 -140px;
+    }
+
+    &.online-payment {
+        background-position: 0 -160px;
+    }
+
+}
+
+.groupon-block {
+    width: 189px;
+    overflow: hidden;
+    font-family: tahoma,arial,'\5b8b\4f53',sans-serif;
+    line-height: 18px;
+    word-wrap: break-word;
+
+    .line-one {
+        vertical-align: top;
+        margin-top: 12px;
+        margin-bottom: 8px;
+        overflow: hidden;
+        position: relative;
+
+        .logo-wrapper {
+            float: left;
+            margin-left: 13px;
+            line-height: 15px;
+
+            .logo {
+                height: 42px;
+                width: 67px;
+                border: 1px solid #ddd;
+                padding: 2px;
+                position: relative;
+            }
+
+            .count {
+                font-size: 12px;
+                color: #666;
+                text-align: center;
+                height: 16px;
+                overflow: hidden;
+                display: block;
+                line-height: 14px;
+                margin-top: 8px;
+            }
+        }
+
+        .info {
+            position: absolute;
+            right: 0;
+            margin-left: 9px;
+            margin-right: 7px;
+            width: 87px;
+            overflow: hidden;
+
+            .name {
+                height: 20px;
+                line-height: 20px;
+                color: #333;
+                font-size: 14px;
+                font-weight: normal;
+                overflow: hidden;
+            }
+
+            em {
+                color: #666;
+                line-height: 20px;
+            }
+
+            .old-price {
+                text-decoration: line-through;
+                color: #999;
+            }
+
+            .buy {
+                height: 22px;
+                line-height: 22px;
+                height: 24px\9;
+                line-height: 24px\9;
+                padding-left: 4px;
+                cursor: pointer;
+                text-decoration: none;
+                float: left;
+                zoom: 1;
+                @include border-radius(2px);
+                font-size: 12px;
+                margin-top: 5px;
+                background-color: #fff;
+                border: 1px solid #d9d9d9;
+                color: #ff8400;
+
+                &:hover {
+                    background-color: #fff4e8;
+                }
+
+                span {
+                    padding: 0 12px 0 10px;
+                    white-space: nowrap;
+                    float: left;
+                    text-align: center;
+                    border: 0;
+                    background-color: transparent;
+                    height: 22px;
+                    height: 24px\9;
+                    font-weight: bold;
+                    cursor: pointer;
+                    display: -moz-inline-box;
+                    display: inline-block;
+                    zoom: 1;
+                    font-family: "Microsoft YaHei",\9ed1\4f53;
+                }
+            }
+        }
+    }
+}
+
+.restaurant-block {
+    width: 189px;
+    overflow: hidden;
+
+    a {
+        color: #333;
+    }
+
+    &:hover {
+        background: #f8f8f8;
+
+        a {
+            color: #0088c8;
+        }
+    }
+
+    &.closed {
+        background: #fff url("/assets/images/restaurant_closed_bg.png");
+
+        a {
+            color: #999;
+        }
+
+        .line-one {
+            .info {
+                .name, .flavors {
+                    color: #999;
+                }
+            }
+
+            .logo-wrapper .deliver-time-wrapper {
+                color: #999;
+            }
+        }
+
+    }
+
+    .add-favor {
+        height: 92px;
+        background: #fff url("/assets/images/bg.gif") no-repeat -112px -94px;
+        border-left: 1px solid white;
+        border-right: 1px solid white;
+        margin: 0;
+        text-align: left;
+        padding-top: 0;
+
+        &:hover {
+            background: #fff url("/assets/images/bg.gif") no-repeat -303px -94px;
+        }
+    }
+
+    .favored, .lite {
+        height: auto;
+        cursor: pointer;
+    }
+
+    .favor-book {
+        position: relative;
+        margin-left: 115px;
+        text-align: right;
+
+        .favor-icon {
+            background: transparent url("/assets/images/bg.gif") repeat scroll -480px -776px;
+            height: 22px;
+            width: 20px;
+            position: absolute;
+            top: 0;
+            left: 54px;
+        }
+
+        a {
+            color: #999;
+            position: absolute;
+            top: 67px;
+            line-height: 13px;
+            width: 50px;
+            padding: 1px 0 0 15px;
+        }
+
+        .hover-add-favor {
+            background: url("/assets/images/bg.gif") no-repeat -124px -779px;
+            right: 10px;
+            width: 27px;
+        }
+
+        .hover-un-favor {
+            background: url("/assets/images/bg.gif") no-repeat -205px -779px;
+            right: 10px;
+            width: 53px;
+        }
+    }
+
+    .line-one {
+        vertical-align: top;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        overflow: hidden;
+
+        .logo-wrapper {
+            float: left;
+            margin-left: 10px;
+            line-height: 15px;
+
+            .logo {
+                height: 42px;
+                width: 42px;
+                border: 1px solid #ddd;
+                padding: 1px;
+                position: relative;
+            }
+
+            .deliver-time-wrapper {
+                line-height: 14px;
+                color: #666;
+                font-size: 12px;
+                margin-top: 8px;
+                padding-top: 2px;
+                height: 16px;
+                text-align: center;
+
+                &.busy {
+                    background: #ffe2e2;
+                }
+            }
+        }
+
+        .info {
+            float: left;
+            margin-left: 8px;
+            margin-right: 7px;
+            width: 118px;
+            overflow: hidden;
+
+            .name {
+                font-size: 15px;
+                color: #333;
+                height: 18px;
+                overflow: hidden;
+            }
+
+            .flavors {
+                color: #666;
+                font-size: 12px;
+                float: left;
+                line-height: 100%;
+                min-width: 10px;
+                height: 12px;
+                margin-top: 4px;
+            }
+
+            .ratings {
+                color: #666;
+                font-size: 12px;
+                margin-top: 4px;
+                float: left;
+                width: 100%;
+
+                .rating-star {
+                    float: left;
+                }
+
+                .rating-number {
+                    line-height: 14px;
+                    float: left;
+                    margin-left: 3px;
+                    font-size: 12px;
+                    color: #999;
+                }
+
+                @for $i from 0 through 10 {
+                    .r#{$i} {
+                        background-position: -1px ($i * 15 - 329px);
+                    }
+                }
+            }
+
+            .icons {
+                float: left;
+                width: 100%;
+
+                .restaurant-icons {
+                    margin-top: 4px;
+                }
+            }
+
+            .status-label {
+                float: left;
+                width: 100%;
+                margin-top: 9px;
+                height: 20px;
+
+                &.book span {
+                    color: #59b170;
+                    background: #f8f8ee;
+                    border: 1px solid #59b170;
+                    padding: 2px 4px;
+                    font-size: 12px;
+                }
+
+                &.closed span {
+                    color: #999;
+                    background: #f5f5f5;
+                    border: 1px solid #ddd;
+                    padding: 2px 4px;
+                    font-size: 12px;
+                }
+            }
+
+            .status-desc {
+                line-height: 14px;
+                float: left;
+                font-size: 12px;
+                width: 100%;
+                margin-top: 11px;
+
+                &.book span {
+                    color: #999;
+                }
+
+                &.closed span {
+                    color: #999;
+                }
+            }
+        }
+    }
+}
+
+.restaurant-panel {
+    position: relative;
+    float: left;
+
+    .favor-icon {
+        background: transparent url("/assets/images/bg.gif") repeat scroll -480px -776px;
+        height: 22px;
+        width: 20px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .restaurant-more-info {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        float: left;
+
+        p {
+            word-wrap: break-word;
+            word-break: break-all;
+            margin: 5px 10px;
+            line-height: 150%;
+        }
+
+        &.ann {
+        color: #f93;
+        }
+
+        .divider {
+            height: 1px;
+            margin: 10px 10px;
+            overflow: hidden;
+            background-color: #EEE;
+        }
+
+        ul.icons {
+            margin-right: 10px;
+            list-style: none;
+            margin-left: 10px;
+            margin-bottom: 0;
+
+            li {
+                line-height: 19px;
+                color: #333;
+                font-size: 13px;
+                margin: 3px 0;
+
+                span.restaurant-icons {
+                    margin-top: 2px;
+                }
+            }
+        }
+    }
+}
+
+.area-activities {
+    overflow: visible;
+    height: auto!important;
+
+    .area-activities-other {
+        padding: 4px 10px;
+        overflow: auto;
+
+        .filter-btn {
+            float: left;
+            cursor: pointer;
+            margin-right: 30px;
+
+            input {
+                margin: 1px 2px 0 0;
+            }
+
+            .filter-text {
+                vertical-align: middle;
+            }
+        }
+    }
+}
+
+.geoplace-activities {
+    margin: 30px 0;
+}
+
+.gp-activity-block {
+    float: left;
+    display: block;
+    width: 150px;
+    height: 93px;
+    overflow: hidden;
+    @include box-shadow(rgba(0,0,0,0.3) 0 1px 3px);
+    margin-left: 50px;
+
+    &:first-child {
+        margin-left: 0;
+    }
+
+    & > img {
+        width: 150px;
+
+        &:hover {
+            @include opacity(0.8);
+        }
+    }
+}
+
+.p-entrance {
+    text-decoration: none;
+
+    &.p-entrance-btn {
+        position: relative;
+        height: 22px;
+        line-height: 22px;
+        padding: 3px 6px;
+        margin-left: 6px;
+        border: 1px solid #009ACB;
+        @include border-radius(4px);
+        color: white;
+        font-size: 12px;
+        background: #0c9efc;
+
+        &:hover {
+            background: #0c9e5c;
+            text-decoration: none;
+        }
+    }
+
+    &.p-entrance-total {
+        margin-left: 3px;
+
+        em {
+            color: #fe6000;
+            font: normal 20px/1em Arial,'Helvetica Neue',sans-serif;
+        }
+
+        &:hover {
+            text-decoration: none;
+            border-bottom: 1px solid #333;
+        }
+    }
+}
